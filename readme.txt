@@ -1,0 +1,1 @@
+Project is used for lerning JQUERY
