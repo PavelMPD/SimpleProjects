@@ -1,0 +1,13 @@
+﻿@using ED.Domen.Entities;
+@model IEnumerable<Task>
+
+@{
+    ViewBag.Title = "Задачи";
+}
+
+<h2>Задачи</h2>
+
+@foreach(Task item in Model)
+{
+    <div><h3>@item.Caption</h3></div>
+}

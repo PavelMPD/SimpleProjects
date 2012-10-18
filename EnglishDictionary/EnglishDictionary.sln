@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ED.Domen", "ED.Domen\ED.Domen.csproj", "{67B6C267-5DA3-4D8E-875D-1E864839D9F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ED.Repository", "ED.Repository\ED.Repository.csproj", "{C595C64E-C9AB-40FF-AEC0-3CDD8C2C5928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ED.UI", "ED.UI\ED.UI.csproj", "{97CEACFB-0F3C-4EB7-8827-3276A4604ABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67B6C267-5DA3-4D8E-875D-1E864839D9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B6C267-5DA3-4D8E-875D-1E864839D9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B6C267-5DA3-4D8E-875D-1E864839D9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B6C267-5DA3-4D8E-875D-1E864839D9F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C595C64E-C9AB-40FF-AEC0-3CDD8C2C5928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C595C64E-C9AB-40FF-AEC0-3CDD8C2C5928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C595C64E-C9AB-40FF-AEC0-3CDD8C2C5928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C595C64E-C9AB-40FF-AEC0-3CDD8C2C5928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97CEACFB-0F3C-4EB7-8827-3276A4604ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CEACFB-0F3C-4EB7-8827-3276A4604ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CEACFB-0F3C-4EB7-8827-3276A4604ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CEACFB-0F3C-4EB7-8827-3276A4604ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
