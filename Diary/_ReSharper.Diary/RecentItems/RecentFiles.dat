@@ -1,12 +1,19 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/f:Global.asax.cs" caret="983" fromTop="19" />
     <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:App_Start/f:PreStartApp.cs" caret="146" fromTop="8" />
     <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/f:Web.config" caret="5686" fromTop="12" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:Views/d:Home/f:Index.cshtml" caret="147" fromTop="7" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:Views/d:Tasks/f:Index.cshtml" caret="677" fromTop="21" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:Views/d:Tasks/f:AddTask.cshtml" caret="104" fromTop="5" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/f:Global.asax.cs" caret="375" fromTop="14" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:Controllers/f:TasksController.cs" caret="582" fromTop="21" />
   </RecentFiles>
   <RecentEdits>
-    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/f:Global.asax.cs" caret="992" fromTop="19" />
     <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:App_Start/f:PreStartApp.cs" caret="146" fromTop="8" />
     <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/f:Web.config" caret="6707" fromTop="43" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:Views/d:Home/f:Index.cshtml" caret="147" fromTop="7" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:Views/d:Tasks/f:Index.cshtml" caret="672" fromTop="21" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/f:Global.asax.cs" caret="427" fromTop="16" />
+    <File id="812AE022-37AF-4EE7-B5B7-0BA43D487155/d:Controllers/f:TasksController.cs" caret="518" fromTop="21" />
   </RecentEdits>
 </RecentFiles>

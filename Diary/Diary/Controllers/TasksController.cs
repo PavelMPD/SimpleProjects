@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.Entity;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -18,8 +19,7 @@ namespace Diary.Controllers
         public ActionResult Index()
         {
             List<TaskStatus> list = entities.TaskStatus.ToList();
-
-
+            //MvcApplication.logger.Info(entities.TaskStatus.ToTraceString());
             ViewBag.TaskStatuses = GetTaskStatuses(list);
             return View(list);
         }
