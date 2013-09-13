@@ -1,0 +1,36 @@
+﻿@using System.Collections
+@using Diary.Models
+
+@model IList<TaskStatus>
+@{
+    ViewBag.Title = "Tasks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tasks</h2>
+
+<div>
+    <label>Фильтр</label>
+    <table>
+    <tr>
+        <td><label>Тип задачи</label></td>
+        <td>@Html.DropDownList("TaskStatuses")</td>
+    </tr>
+</table>
+</div>
+
+<div>
+    <label>Задачи</label>
+    @Html.ActionLink("Add task", "AddTask", "Tasks")
+    <table>
+        @{
+            IList<TaskStatus> taskStatuses = Model;
+            foreach (var taskStatus in taskStatuses)
+            {
+                <tr>
+                    <td>@Html.Raw(taskStatus.Name)</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
