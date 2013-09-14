@@ -133,7 +133,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TasksController.cs" />
-    <Compile Include="Models\DiaryModel.Designer.cs">
+    <Compile Include="Controllers\WorkDaysController.cs" />
+    <Compile Include="DAL\DiaryModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DiaryModel.edmx</DependentUpon>
@@ -141,6 +142,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Task.cs" />
+    <Compile Include="Models\WorkDay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -238,7 +241,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\DiaryModel.edmx">
+    <EntityDeploy Include="DAL\DiaryModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DiaryModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
@@ -248,6 +251,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Tasks\AddTask.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WorkDays\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\WorkDays\AddWorkDay.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
