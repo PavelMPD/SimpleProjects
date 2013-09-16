@@ -59,3 +59,16 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
