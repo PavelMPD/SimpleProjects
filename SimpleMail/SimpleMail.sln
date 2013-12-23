@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSender", "MailSender\MailSender.csproj", "{FE237631-7C61-43C0-A23A-246DBDE9FCBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSender.Test", "MailSender.Test\MailSender.Test.csproj", "{8406BC8D-EB55-4F25-A11D-16ABD26582FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{5E11233F-1D67-4658-BAEF-7EA43C6EAF92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE237631-7C61-43C0-A23A-246DBDE9FCBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE237631-7C61-43C0-A23A-246DBDE9FCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE237631-7C61-43C0-A23A-246DBDE9FCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE237631-7C61-43C0-A23A-246DBDE9FCBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8406BC8D-EB55-4F25-A11D-16ABD26582FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8406BC8D-EB55-4F25-A11D-16ABD26582FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8406BC8D-EB55-4F25-A11D-16ABD26582FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8406BC8D-EB55-4F25-A11D-16ABD26582FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E11233F-1D67-4658-BAEF-7EA43C6EAF92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E11233F-1D67-4658-BAEF-7EA43C6EAF92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E11233F-1D67-4658-BAEF-7EA43C6EAF92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E11233F-1D67-4658-BAEF-7EA43C6EAF92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
