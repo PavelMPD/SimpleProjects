@@ -1,0 +1,5 @@
+import sys
+sys.path.append('c:\Pavel\SimpleProjects\GitHub\SimpleProjects\SimplePython')
+import FastStartPython
+help(FastStartPython)
+FastStartPython.ssbl()
