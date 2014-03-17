@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using System.Diagnostics;
 using MailSender.CimUpdateDataResultWrappers;
+using DebtCollection.Model.Enums;
 
 namespace MailSender.Test.CimUpdateDataResultWrappers
 {
@@ -11,17 +12,30 @@ namespace MailSender.Test.CimUpdateDataResultWrappers
         [Test]
         public void SerializeToXml()
         {
-            var partResult = new CimUpdateDataResult()
+            var updateResult = GetCimUpdateDataResult();
+            Trace.WriteLine(updateResult.Serialize());
+        }
+
+        private CimUpdateDataResult GetCimUpdateDataResult()
+        {
+            return new CimUpdateDataResult()
             {
                 DebtorsUpdateResult = new CimPartUpdateDataResult()
                 {
-                    Status = ResultStatus.Success,
-                    Message = "Успешно"
+                    Status = ProcessingStatus.Successful,
+                    Message = "успешно"
                 },
-                CallsUpdateResult = new CimPartUpdateDataResult(),
+                CallsUpdateResult = new CimPartUpdateDataResult()
+                {
+                    Status = ProcessingStatus.Warning,
+                    Message = "частично"
+                },
                 PaymentsUpdateResult = new CimPartUpdateDataResult()
+                {
+                    Status = ProcessingStatus.Fail,
+                    Message = "не успешно"
+                },
             };
-            Trace.WriteLine(partResult.Serialize());
         }
     }
 }

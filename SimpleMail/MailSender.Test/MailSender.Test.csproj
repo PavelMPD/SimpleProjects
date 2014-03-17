@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CimUpdateDataResultWrappers\CimPartUpdateDataResultTest.cs" />
+    <Compile Include="MailBodyBuiderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
