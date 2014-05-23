@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{049A1B09-95B2-432D-8A2A-68E3F2F25EBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DebtCollection.Model</RootNamespace>
+    <AssemblyName>DebtCollection.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Testing|AnyCPU'">
+    <OutputPath>bin\Testing\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreProd|AnyCPU'">
+    <OutputPath>bin\PreProd\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Linq.Translations">
+      <HintPath>..\packages\Microsoft.Linq.Translations.1.0.1\lib\net40\Microsoft.Linq.Translations.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\Auditable.cs" />
+    <Compile Include="Audit.cs" />
+    <Compile Include="CachedEntity.cs" />
+    <Compile Include="ClaimOperationInfo.cs" />
+    <Compile Include="Complaint.cs" />
+    <Compile Include="ComplaintEndorsement.cs" />
+    <Compile Include="ComplaintSubdocument.cs" />
+    <Compile Include="Dtos\ClaimDto.cs" />
+    <Compile Include="DebtorsData.cs" />
+    <Compile Include="Attributes\AllowedForDocumentAttribute.cs" />
+    <Compile Include="Dtos\JurisdictionDebtorDto.cs" />
+    <Compile Include="Enums\SubDocumentAllowedType.cs" />
+    <Compile Include="IAssumingAnswerDocument.cs" />
+    <Compile Include="IEdmsRegistrableDocument.cs" />
+    <Compile Include="Dtos\EarchiveForUploadDto.cs" />
+    <Compile Include="Dtos\EarchiveDto.cs" />
+    <Compile Include="EarchiveFileUploadHistory.cs" />
+    <Compile Include="DocumentValidationAttribute.cs" />
+    <Compile Include="EndorsementSubdocument.cs" />
+    <Compile Include="Enums\OperationDebtorStatus.cs" />
+    <Compile Include="Enums\OperationSubdocumentStatus.cs" />
+    <Compile Include="Enums\PaymentType.cs" />
+    <Compile Include="Enums\RunWayType.cs" />
+    <Compile Include="EripReport.cs" />
+    <Compile Include="IAuditable.cs" />
+    <Compile Include="IEdmsRegistrableOperation.cs" />
+    <Compile Include="IHousable.cs" />
+    <Compile Include="Mail.cs" />
+    <Compile Include="PaymentAlert.cs" />
+    <Compile Include="Payment\IDocument.cs" />
+    <Compile Include="RemindersConfiguration.cs" />
+    <Compile Include="DebtorsClaimOperationInfo.cs" />
+    <Compile Include="DocumentPayment.cs" />
+    <Compile Include="EdmsRegistrationType.cs" />
+    <Compile Include="Operation.cs" />
+    <Compile Include="OperationDebtor.cs" />
+    <Compile Include="EndorsementOperationInfo.cs" />
+    <Compile Include="Enums\ProcessingFileType.cs" />
+    <Compile Include="Payment\IPayableDocument.cs" />
+    <Compile Include="ReportFilesProcessing\ProcessedFile.cs" />
+    <Compile Include="Dtos\CourtDto.cs" />
+    <Compile Include="Dtos\DebtorExtendedInfo.cs" />
+    <Compile Include="Dtos\ExcludingDebtorDto.cs" />
+    <Compile Include="Dtos\ExistingDebtorDto.cs" />
+    <Compile Include="Dtos\IDto.cs" />
+    <Compile Include="Enums\CommandState.cs" />
+    <Compile Include="Enums\DocumentsBatchProcessorCommandId.cs" />
+    <Compile Include="Enums\DocumentType.cs" />
+    <Compile Include="Enums\OperatingAccount.cs" />
+    <Compile Include="Enums\OperationAction.cs" />
+    <Compile Include="Enums\OperationResult.cs" />
+    <Compile Include="Enums\OperationStatus.cs" />
+    <Compile Include="Enums\Stage.cs" />
+    <Compile Include="ExludedDebtor.cs" />
+    <Compile Include="FileServer.cs" />
+    <Compile Include="LuceneStatus.cs" />
+    <Compile Include="Dtos\CrmItemDto.cs" />
+    <Compile Include="Enums\SubscriberStatus.cs" />
+    <Compile Include="Dtos\BillingDebtorDto.cs" />
+    <Compile Include="Claim.cs" />
+    <Compile Include="Endorsement.cs" />
+    <Compile Include="DebtAmountHistory.cs" />
+    <Compile Include="Debtor.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Enums\FileEntityType.cs" />
+    <Compile Include="FileEntity.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="Jurisdiction.cs" />
+    <Compile Include="PaymentInformation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationAddressHistory.cs" />
+    <Compile Include="ReportFilesProcessing\ProcessedFileDetails.cs" />
+    <Compile Include="Enums\ProcessingStatus.cs" />
+    <Compile Include="Reports\ReportFourItem.cs" />
+    <Compile Include="Reports\ReportOneItem.cs" />
+    <Compile Include="Reports\ReportZeroItem.cs" />
+    <Compile Include="DebtorsSubdocumentOperationInfo.cs" />
+    <Compile Include="Services\DocumentOperations.cs" />
+    <Compile Include="Services\Dtos\ActionParametersDto.cs" />
+    <Compile Include="Services\Dtos\Claim\ClaimInitialData.cs" />
+    <Compile Include="Services\Dtos\Claim\ClaimOperationDto.cs" />
+    <Compile Include="Services\Dtos\Claim\EdmsClaimRecordDto.cs" />
+    <Compile Include="Services\Dtos\Claim\UploadEdmsData.cs" />
+    <Compile Include="Services\Dtos\DebtorsActionParametersDto.cs" />
+    <Compile Include="Services\Dtos\Endorsement\CoverLettersParametersDto.cs" />
+    <Compile Include="Services\Dtos\Endorsement\CreateInParametersDto.cs" />
+    <Compile Include="Services\Dtos\Endorsement\EndorsementInitialData.cs" />
+    <Compile Include="Services\Dtos\Endorsement\EndorsementOperationDto.cs" />
+    <Compile Include="Services\Dtos\Endorsement\ReplaceEndorsementsDebtorsResultDto.cs" />
+    <Compile Include="Services\Dtos\FileEntityDto.cs" />
+    <Compile Include="Services\Dtos\IDebtorsData.cs" />
+    <Compile Include="Services\Dtos\IDocumentsData.cs" />
+    <Compile Include="Services\Dtos\OperationDebtorCollection.cs" />
+    <Compile Include="Services\Dtos\OperationDebtorDto.cs" />
+    <Compile Include="Services\Dtos\OperationDto.cs" />
+    <Compile Include="Services\Dtos\OperationResult.cs" />
+    <Compile Include="Services\Dtos\OrderDto.cs" />
+    <Compile Include="Services\Dtos\StateDescriptionDto.cs" />
+    <Compile Include="Services\Dtos\Subdocuments\ActionDocumentDescriptor.cs" />
+    <Compile Include="Services\Dtos\Subdocuments\DocumentsActionParametersDto.cs" />
+    <Compile Include="Services\Dtos\Subdocuments\DocumentsGeneratingParametersDto.cs" />
+    <Compile Include="Services\Dtos\Subdocuments\EdmsSubdocumentRecordDto.cs" />
+    <Compile Include="Services\Dtos\Subdocuments\RegisteredDocumentsDto.cs" />
+    <Compile Include="Services\IDocumentsBatchProcessor.cs" />
+    <Compile Include="Services\Namespaces.cs" />
+    <Compile Include="SubdocumentOperationInfo.cs" />
+    <Compile Include="Enums\SubdocumentType.cs" />
+    <Compile Include="SubscriberNameHistory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Math\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2AA7D380-6CCE-42C6-8BE3-1061AECA7F8D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
