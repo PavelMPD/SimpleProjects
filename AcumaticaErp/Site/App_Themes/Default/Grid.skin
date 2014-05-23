@@ -1,0 +1,629 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<px:PXGrid runat="server" CssClass="GridMain">
+	<ActionBar ActionsText="False">
+		<PagerStyles>
+			<Cell CssClass="GridPagerCell" />
+			<Link CssClass="GridPagerLink" />
+		</PagerStyles>	
+	</ActionBar>
+	<FilesMenuUrls FileInfoUrl="~/Pages/SM/SM202510.aspx" FilesDisplayUrl="~/Frames/GetFile.ashx" FilesListUrl="" />
+	
+	<Layout WrapText="False" />
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<SelectedRow CssClass="GridSelRow" />
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+		<CellButton CssClass="GridCellButton" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<%--------------------------------------------------------------------------------%>
+<px:PXGrid runat="server" SkinID="Primary" CssClass="GridMain">
+	<ActionBar Position="TopAndBottom" CustomItemsGroup="1" PagerGroup="1" PagerOrder="2" 
+		PagerVisible="Bottom" ActionsText="False">
+		<PagerSettings Mode="Numeric" />
+		<TopGroups>
+			<px:PXActionGroup />
+			<px:PXActionGroup />
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</TopGroups>
+		<BottomGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</BottomGroups>
+		<Actions>
+			<Refresh Enabled="False" Order="1" />
+			<Save Enabled="False"  Order="2"/>
+			<NoteShow Enabled="False" />
+			<Search ToolBarVisible="False" GroupIndex="2" Order="3" />
+			<AddNew GroupIndex="0" Order="4" />
+			<Delete GroupIndex="0" Order="5" />
+			<EditRecord GroupIndex="0" Order="3" />
+			<AdjustColumns GroupIndex="2" Order="1" />
+			<ExportExcel GroupIndex="2" Order="2" />
+			<Upload GroupIndex="2" Order="3" />
+			<FilterSet GroupIndex="3" Order="1" />
+			<FilterShow GroupIndex="3" Order="2" />
+			<FilterBar GroupIndex="0" Order="1" ToolBarVisible="Bottom" Enabled="True" />
+			<PageFirst GroupIndex="1" Order="0" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PagePrev GroupIndex="1" Order="1" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageNext GroupIndex="1" Order="3" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageLast GroupIndex="1" Order="4" ToolBarVisible="Bottom" MenuVisible="False" />
+		</Actions>
+		
+		<PagerStyles>
+			<Cell CssClass="GridPagerCell" />
+			<Link CssClass="GridPagerLink" />
+		</PagerStyles>
+	</ActionBar>
+	
+	<FilesMenuUrls FileInfoUrl="~/Pages/SM/SM202510.aspx" FilesDisplayUrl="~/Frames/GetFile.ashx" FilesListUrl="" />
+	<Layout WrapText="False" />
+	<Mode InplaceInsert="True" />
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<AlternateRow CssClass="GridAltRow" />
+		<SelectedRow CssClass="GridSelRow" />
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+		<CellButton CssClass="GridCellButton" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<%--------------------------------------------------------------------------------%>
+<px:PXGrid runat="server" SkinID="Inquire" CssClass="GridMain" CaptionVisible="false" AllowPaging="true" PageSize="200">
+	<ActionBar Position="TopAndBottom" CustomItemsGroup="1" PagerGroup="1" PagerOrder="2" 
+		PagerVisible="Bottom" ActionsText="False">
+		<PagerSettings Mode="Numeric" />
+		<TopGroups>
+			<px:PXActionGroup />
+			<px:PXActionGroup />
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</TopGroups>
+		<BottomGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</BottomGroups>
+		<Actions>
+			<AddNew Enabled="False" />  <Delete Enabled="False" />
+			<Save Enabled="False" /> <EditRecord Enabled="False" />
+			<Search Enabled="False" /> <NoteShow Enabled="False" /> 
+
+			<Refresh GroupIndex="0" Order="1" />
+			<AdjustColumns GroupIndex="2" Order="1" />
+			<ExportExcel GroupIndex="2" Order="2" />
+			<Upload GroupIndex="2" Order="3" />
+			<FilterSet GroupIndex="3" Order="1" />
+			<FilterShow GroupIndex="3" Order="2" />
+			
+			<FilterBar GroupIndex="0" Order="0" ToolBarVisible="Bottom" Enabled="True" />
+			<PageFirst GroupIndex="1" Order="0" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PagePrev GroupIndex="1" Order="1" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageNext GroupIndex="1" Order="3" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageLast GroupIndex="1" Order="4" ToolBarVisible="Bottom" MenuVisible="False" />
+		</Actions>
+		<CustomItems>
+			<px:PXToolBarLabel>
+				<ActionBar ToolBarVisible="Bottom" GroupIndex="0" Order="1" />
+			</px:PXToolBarLabel>
+		</CustomItems>
+		
+		<PagerStyles>
+			<Cell CssClass="GridPagerCell" />
+			<Link CssClass="GridPagerLink" />
+		</PagerStyles>
+	</ActionBar>
+	
+	<FilesMenuUrls FileInfoUrl="~/Pages/SM/SM202510.aspx" FilesDisplayUrl="~/Frames/GetFile.ashx" FilesListUrl="" />
+	<Layout WrapText="False" />
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<AlternateRow CssClass="GridAltRow" />
+		<SelectedRow CssClass="GridSelRow" />
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+		<CellButton CssClass="GridCellButton" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<%--------------------------------------------------------------------------------%>
+<px:PXGrid runat="server" SkinID="Details" CssClass="GridMain" AllowPaging="true" PageSize="200" CaptionVisible="False">
+	<ActionBar Position="TopAndBottom" CustomItemsGroup="1" PagerGroup="1" PagerOrder="2" 
+		PagerVisible="Bottom" ActionsText="False">		
+		<PagerSettings Mode="Numeric" />
+		<TopGroups>
+			<px:PXActionGroup />
+			<px:PXActionGroup />
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</TopGroups>
+		<BottomGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</BottomGroups>
+		<Actions>
+			<Save Enabled="False" Order="2" />
+			<Search Enabled="False" />
+			<FilesMenu Enabled="False" />
+			<NoteShow Enabled="False" />
+			<Refresh GroupIndex="0" Order="1" />
+			<AddNew GroupIndex="0" Order="4" />
+			<Delete GroupIndex="0" Order="5" />
+			<EditRecord GroupIndex="0" Order="3" />
+			<AdjustColumns GroupIndex="2" Order="1" />
+			<ExportExcel GroupIndex="2" Order="2" />
+			<Upload GroupIndex="2" Order="3" />
+			<FilterSet GroupIndex="3" Order="1" />
+			<FilterShow GroupIndex="3" Order="2" />
+			<FilterBar GroupIndex="0" Order="1" ToolBarVisible="Bottom" Enabled="True" />
+			<PageFirst GroupIndex="1" Order="0" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PagePrev GroupIndex="1" Order="1" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageNext GroupIndex="1" Order="3" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageLast GroupIndex="1" Order="4" ToolBarVisible="Bottom" MenuVisible="False" />
+		</Actions>
+		
+		<PagerStyles>
+			<Cell CssClass="GridPagerCell" />
+			<Link CssClass="GridPagerLink" />
+		</PagerStyles>
+	</ActionBar>
+	
+	<FilesMenuUrls FileInfoUrl="~/Pages/SM/SM202510.aspx" FilesDisplayUrl="~/Frames/GetFile.ashx" FilesListUrl="" />
+	<Layout WrapText="False" />
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<AlternateRow CssClass="GridAltRow" />
+		<SelectedRow CssClass="GridSelRow" />
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+		<CellButton CssClass="GridCellButton" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<%--------------------------------------------------------------------------------%>
+<px:PXGrid runat="server" SkinID="DetailsInTab" CssClass="GridMainT" AllowPaging="true" PageSize="200">
+	<ActionBar Position="TopAndBottom" CustomItemsGroup="1" PagerGroup="1" PagerOrder="2" 
+		PagerVisible="Bottom" ActionsText="False">		
+		<PagerSettings Mode="Numeric" />
+		<TopGroups>
+			<px:PXActionGroup />
+			<px:PXActionGroup />
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</TopGroups>
+		<BottomGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</BottomGroups>
+		<Actions>
+			<Save Enabled="False" Order="2" />
+			<Search Enabled="False" />
+			<FilesMenu Enabled="False" />
+			<NoteShow Enabled="False" />
+			<Refresh GroupIndex="0" Order="1" />
+			<AddNew GroupIndex="0" Order="4" />
+			<Delete GroupIndex="0" Order="5" />
+			<EditRecord GroupIndex="0" Order="3" />
+			<AdjustColumns GroupIndex="2" Order="1" />
+			<ExportExcel GroupIndex="2" Order="2" />
+			<Upload GroupIndex="2" Order="3" />
+			<FilterSet GroupIndex="3" Order="1" />
+			<FilterShow GroupIndex="3" Order="2" />
+			<FilterBar GroupIndex="0" Order="1" ToolBarVisible="Bottom" Enabled="True" />
+			<PageFirst GroupIndex="1" Order="0" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PagePrev GroupIndex="1" Order="1" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageNext GroupIndex="1" Order="3" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageLast GroupIndex="1" Order="4" ToolBarVisible="Bottom" MenuVisible="False" />
+		</Actions>
+		
+		<PagerStyles>
+			<Cell CssClass="GridPagerCell" />
+			<Link CssClass="GridPagerLink" />
+		</PagerStyles>
+	</ActionBar>
+	
+	<FilesMenuUrls FileInfoUrl="~/Pages/SM/SM202510.aspx" FilesDisplayUrl="~/Frames/GetFile.ashx" FilesListUrl="" />
+	<Layout WrapText="False" />
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<AlternateRow CssClass="GridAltRow" />
+		<SelectedRow CssClass="GridSelRow" />
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+		<CellButton CssClass="GridCellButton" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<%--------------------------------------------------------------------------------%>
+<px:PXGrid runat="server" SkinID="DetailsWithFilter" CssClass="GridMain" AllowPaging="true" PageSize="200">
+	<ActionBar Position="TopAndBottom" CustomItemsGroup="1" PagerGroup="1" PagerOrder="2" 
+		PagerVisible="Bottom" ActionsText="False">
+		<PagerSettings Mode="Numeric" />
+		<TopGroups>
+			<px:PXActionGroup />
+			<px:PXActionGroup />
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</TopGroups>
+		<BottomGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</BottomGroups>
+		<Actions>
+			<Save Enabled="False" Order="2" />
+			<Search Enabled="False" />
+			<FilesMenu Enabled="False" />
+			<NoteShow Enabled="False" />
+			<Refresh GroupIndex="0" Order="1" />
+			<AddNew GroupIndex="0" Order="4" />
+			<Delete GroupIndex="0" Order="5" />
+			<EditRecord GroupIndex="0" Order="3" />
+			<AdjustColumns GroupIndex="2" Order="1" />
+			<ExportExcel GroupIndex="2" Order="2" />
+			<Upload GroupIndex="2" Order="3" />
+			<FilterSet GroupIndex="3" Order="1" />
+			<FilterShow GroupIndex="3" Order="2" />
+			<FilterBar GroupIndex="0" Order="1" ToolBarVisible="Bottom" Enabled="True" />
+			<PageFirst GroupIndex="1" Order="0" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PagePrev GroupIndex="1" Order="1" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageNext GroupIndex="1" Order="3" ToolBarVisible="Bottom" MenuVisible="False" />
+			<PageLast GroupIndex="1" Order="4" ToolBarVisible="Bottom" MenuVisible="False" />
+		</Actions>
+		
+		<PagerStyles>
+			<Cell CssClass="GridPagerCell" />
+			<Link CssClass="GridPagerLink" />
+		</PagerStyles>
+	</ActionBar>
+	
+	<FilesMenuUrls FileInfoUrl="~/Pages/SM/SM202510.aspx" FilesDisplayUrl="~/Frames/GetFile.ashx" FilesListUrl="" />
+	<Layout WrapText="False" />
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<AlternateRow CssClass="GridAltRow" />
+		<SelectedRow CssClass="GridSelRow" />
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+		<CellButton CssClass="GridCellButton" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<%--------------------------------------------------------------------------------%>
+<px:PXGrid runat="server" SkinID="Attributes" CssClass="GridMainA" MatrixMode="True" 
+	AllowFilter="False" AutoAdjustColumns="true" >
+	<Layout WrapText="False" HeaderVisible="True" />
+	<Mode AllowAddNew="False" AllowColMoving="False" AllowDelete="False" AllowSort="False" />
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<SelectedRow CssClass="GridSelRow"/>
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+		<CellButton CssClass="GridCellButton" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<px:PXGrid runat="server" SkinID="ShortList" CssClass="GridMainA" AllowFilter="False" 
+	AutoAdjustColumns="true" MatrixMode="true">
+	<Layout WrapText="False" />
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<SelectedRow CssClass="GridSelRow"/>
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+		<CellButton CssClass="GridCellButton" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<%--------------------------------------------------------------------------------%>
+<px:PXGrid runat="server" SkinID="Selector" CssClass="GridMainS" AllowPaging="true" PageSize="200">
+	<ActionBar Position="TopAndBottom" CustomItemsGroup="1" PagerGroup="1" PagerOrder="2" 
+		PagerVisible="Bottom" ActionsText="False">
+		<TopGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</TopGroups>
+		<BottomGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</BottomGroups>
+		<Actions>
+			<Save Enabled="False" /> 	<AddNew Enabled="False" />
+			<Delete Enabled="False" />  <ExportExcel Enabled="False" />
+			<EditRecord Enabled="False" /> <NoteShow Enabled="False" />
+
+			<Refresh Order="0" /> <AdjustColumns Order="2" />
+			<FilterSet GroupIndex="1" Order="1" />
+			<FilterShow GroupIndex="1" Order="2" />
+
+			<Search ToolBarVisible="Bottom" Order="0" Enabled="False" />
+			<FilterBar ToolBarVisible="Bottom" Order="0" Enabled="True" />
+			<PageFirst ToolBarVisible="Bottom" GroupIndex="1" Order="0" MenuVisible="False" />
+			<PagePrev ToolBarVisible="Bottom" GroupIndex="1" Order="1" MenuVisible="False" />
+			<PageNext ToolBarVisible="Bottom" GroupIndex="1" Order="3" MenuVisible="False" />
+			<PageLast ToolBarVisible="Bottom" GroupIndex="1" Order="4" MenuVisible="False" />
+		</Actions>
+		
+		<PagerStyles>
+			<Cell CssClass="GridPagerCell" />
+			<Link CssClass="GridPagerLink" />
+		</PagerStyles>
+	</ActionBar>
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<AlternateRow CssClass="GridAltRow" />
+		<SelectedRow CssClass="GridSelRow" />
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</px:PXGrid>
+
+<%--------------------------------------------------------------------------------%>
+<px:PXSelector runat="server" CssClass="selector" GridSkin="Selector">
+	<EditorStyle CssClass="editor" />
+</px:PXSelector>
+
+<px:PXSegmentMask runat="server" CssClass="selector" GridSkin="Selector">
+	<EditorStyle CssClass="editor" />
+</px:PXSegmentMask>
+
+<px:PXMultiSelector runat="server" CssClass="selector multi" GridSkin="Selector">
+	<EditorStyle CssClass="editor" />
+</px:PXMultiSelector>
+<px:PXMultiSelector runat="server" CssClass="selector multi" GridSkin="Selector" 
+	SkinID="email" ValueTemplate='"{1}" <{0}>'>
+	<EditorStyle CssClass="editor" />
+</px:PXMultiSelector>
+
+<pxa:PXDynamicSelector runat="server" CssClass="selector" GridSkin="Selector">
+	<EditorStyle CssClass="editor" />
+</pxa:PXDynamicSelector>
+
+<pxa:PXEmailSelector runat="server" CssClass="selector" GridSkin="Selector">
+	<EditorStyle CssClass="editor" />
+</pxa:PXEmailSelector>
+
+<pxa:PXEmailGrid runat="server" SkinID="Selector" CssClass="GridMainS" AllowPaging="true" PageSize="200">
+	<ActionBar Position="TopAndBottom" CustomItemsGroup="1" PagerGroup="1" PagerOrder="2" 
+		PagerVisible="Bottom" ActionsText="False">
+		<TopGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</TopGroups>
+		<BottomGroups>
+			<px:PXActionGroup Separator="Label" SeparatorWidth="100%" />
+			<px:PXActionGroup />
+		</BottomGroups>
+		<Actions>
+			<Save Enabled="False" /> 	<AddNew Enabled="False" />
+			<Delete Enabled="False" />  <ExportExcel Enabled="False" />
+			<EditRecord Enabled="False" /> <NoteShow Enabled="False" />
+
+			<Refresh Order="0" /> <AdjustColumns Order="2" />
+			<FilterSet GroupIndex="1" Order="1" />
+			<FilterShow GroupIndex="1" Order="2" />
+
+			<Search ToolBarVisible="Bottom" Order="0" Enabled="False" />
+			<FilterBar ToolBarVisible="Bottom" Order="0" Enabled="True" />
+			<PageFirst ToolBarVisible="Bottom" GroupIndex="1" Order="0" MenuVisible="False" />
+			<PagePrev ToolBarVisible="Bottom" GroupIndex="1" Order="1" MenuVisible="False" />
+			<PageNext ToolBarVisible="Bottom" GroupIndex="1" Order="3" MenuVisible="False" />
+			<PageLast ToolBarVisible="Bottom" GroupIndex="1" Order="4" MenuVisible="False" />
+		</Actions>
+		
+		<PagerStyles>
+			<Cell CssClass="GridPagerCell" />
+			<Link CssClass="GridPagerLink" />
+		</PagerStyles>
+	</ActionBar>
+	
+	<LevelStyles>
+		<Row CssClass="GridRow" />
+		<AlternateRow CssClass="GridAltRow" />
+		<SelectedRow CssClass="GridSelRow" />
+		<ActiveRow CssClass="GridActiveRow" />
+		<ActiveCell CssClass="GridActiveCell" />
+		<Header CssClass="GridHeader" />
+		<RowSelector CssClass="GridRowSelector" />
+		<CellEditor CssClass="GridCellEditor" />
+		<EditorText CssClass="GridEditorText" />
+		<Error CssClass="GridError" />
+		<Warning CssClass="GridWarn" />
+		<ReadOnlyCell CssClass="GridReadOnly" />
+		<RowForm CssClass="GridRowForm" />
+	</LevelStyles>
+	
+	<GridStyles>
+		<ToolsCell CssClass="GridToolsCell" />
+		<ToolsBottom CssClass="GridToolsBottom" />
+		<SearchEditor CssClass="GridSearchEditor" />
+		<Caption CssClass="GridCaption" />
+		<SearchText CssClass="GridSearchText" />
+	</GridStyles>
+	<ExportImages Processing="Images/spinnerSmall.gif" />
+</pxa:PXEmailGrid>
+

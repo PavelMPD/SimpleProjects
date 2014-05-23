@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report Name="report1">
+  <ExcelColumns></ExcelColumns>
+  <ItemFactory></ItemFactory>
+  <Sections>
+    <PageHeader Name="pageHeaderSection1">
+      <Items>
+        <TextBox Name="textBox1">
+          <Excel>
+            <column>4</column>
+            <row>1</row>
+            <width>1</width>
+            <height>1</height>
+          </Excel>
+          <Location>448px, 40px</Location>
+          <Size>120px, 16px</Size>
+          <Value>textBox1</Value>
+        </TextBox>
+      </Items>
+    </PageHeader>
+    <Detail Name="detailSection1" />
+    <PageFooter Name="pageFooterSection1" />
+  </Sections>
+</Report>

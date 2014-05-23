@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Site", "Site\", "{B50741EB-2EC3-49FD-A405-1379E94A0ED2}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{9eef86ee-6246-498f-9d6a-17f9e137f192}|InvoiceAddon.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Site"
+		Debug.AspNetCompiler.PhysicalPath = "Site\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Site\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Site"
+		Release.AspNetCompiler.PhysicalPath = "Site\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Site\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58549"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceAddon", "InvoiceAddon\InvoiceAddon.csproj", "{9EEF86EE-6246-498F-9D6A-17F9E137F192}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B50741EB-2EC3-49FD-A405-1379E94A0ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50741EB-2EC3-49FD-A405-1379E94A0ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50741EB-2EC3-49FD-A405-1379E94A0ED2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50741EB-2EC3-49FD-A405-1379E94A0ED2}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9EEF86EE-6246-498F-9D6A-17F9E137F192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEF86EE-6246-498F-9D6A-17F9E137F192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEF86EE-6246-498F-9D6A-17F9E137F192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEF86EE-6246-498F-9D6A-17F9E137F192}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="File.aspx.cs" Inherits="Wiki_SearchFile" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>File Search</title>
+	<link href="~/App_Themes/Wiki.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="margin: 0px; overflow: hidden">
+	<form id="form1" runat="server">
+		<px_pt:PageTitle ID="usrCaption" runat="server" EnableTheming="true" />
+		<px_srch:Search ID="ctrlSearch" runat="server" EnableTheming="true" />
+		<px_pf:PageFooter ID="usrFooter" runat="server" EnableTheming="true" />
+	</form>
+</body>
+</html>
