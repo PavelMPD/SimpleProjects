@@ -1,0 +1,286 @@
+﻿/*
+    ----------
+    Common
+    ---------
+*/
+.error-text {
+    color: red;
+    font-weight: bold;
+}
+
+
+/*
+    ---------------
+    Debtors
+    ---------------
+*/
+
+/* Список свойств в карточе */
+
+.property-list {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0 20px 0px;
+}
+
+.property-list dt {
+    clear: left;
+    float: left;
+    text-align: right;
+    width: 400px;
+    font-weight: bold;
+    height: 26px;
+}
+
+.property-list dd {
+    float: left;
+    padding: 0 0 0 0;
+    margin-left: 15px;
+ }
+
+.payments-table {
+    width: 450px;
+    border: 1px solid black;
+}
+
+.payments-table th{
+    border: 1px solid black;
+    background: #4a70aa;
+    color: #FFFFFF;
+}
+
+.payments-table td {
+     background: #f7f7f7;
+     border: 1px solid black;
+}
+
+.property-divider {
+    margin: 10px 0 10px 0;
+    border-bottom-style: solid;
+    border-color: brown;
+    border-bottom-width: 1px;
+}
+
+.editor-initiator {
+    display: block;
+    min-width: 300px;
+}
+
+.editor-initiator:hover {
+    background: lightgray;
+    cursor: pointer;
+}
+
+.editor-initiator::after {
+    content: '.';
+    white-space: pre;
+    visibility: hidden;
+}
+
+/* карточка с основной информацией */
+
+.info-div table td {
+    vertical-align: top;
+}
+
+.first-column {
+    vertical-align: top !important;
+    width: 550px;
+}
+
+.second-column {
+    vertical-align: top !important;
+}
+
+
+/* Карточка информация об обзвоне*/
+.subscriber-rollcall-info {
+    width: 100%;
+    height: 100%;
+}
+
+/* основной грид */
+
+.grid-header-big-template {
+    float: left;
+    vertical-align: middle;
+    text-align: left;
+    display: table-cell;
+    word-wrap: normal;
+}
+
+.grid-header-big-template-non-sortable {
+    padding-left: 27px;
+}
+
+.grid-cell-currency {
+    text-align: right;
+}
+
+.full-name {
+    cursor: pointer;
+}
+
+    .full-name:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+/* Хак для ячеек не стандартной высоты, выравнивает маркер сортировки по цетру */
+.grid-header-big-cell .k-i-arrow-n {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 100%;
+    position: absolute !important;
+    top: 48% !important;
+}
+
+/* Хак для ячеек не стандартной высоты, выравнивает маркер сортировки по цетру */
+.grid-header-big-cell .k-i-arrow-s {
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute !important;
+    top: 48% !important;
+}
+
+.grid-header-big-cell a {
+    display: inline-block !important;
+    position: relative;
+}
+
+.sub-row {
+}
+
+.sub-alter-row {
+    background-color: #F5F5F5;
+}
+
+.subscriber-payments-info .k-grid-header {
+    display: none;
+}
+
+.subscriber-complaints-info .k-grid-header {
+    display: none;
+}
+
+.k-header-column-menu {
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+    position: absolute !important;
+    top: 42% !important;
+}
+
+.k-header > .k-link {
+    margin-left: 15px !important;
+}
+
+.filter-marker {
+    margin-left: 7px;
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+    position: absolute !important;
+    top: 42% !important;
+}
+
+.subscriber-property {
+    display: block;
+    width: 100%;
+    margin: 50px 0 0 50px;
+}
+
+.subscriber-propery dt {
+    clear: left;
+    float: left;
+    text-align: right;
+    width: 300px;
+    font-weight: bold;
+}
+
+/* карточка с основной информацией !!!!!!!!!!!!!!!!*/
+
+.grid-header-big-cell a {
+    display: inline-block !important;
+    position: relative;
+}
+
+.sub-row {
+}
+
+.document-generation-status-container {
+    margin: 20px 0 0 50px;
+}
+
+.document-button-new {
+}
+
+.document-generation-status-label {
+    color: red;
+    font-weight: bold;
+}
+
+/*
+    ---------------
+    Document operations
+    ---------------
+*/
+
+.operationDetails .k-grid-header {
+    /*display: none;*/
+}
+
+.operation-name {
+    cursor: pointer;
+}
+
+.operation-name:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+.operation-action {
+    margin-left: 20px;
+}
+
+.operation-debtor-description-error {
+    color: red;
+    font-weight: bold;
+}
+
+.operation-debtor-description {
+}
+
+table dt, table dd {
+    border: 1px solid white;
+}
+
+dd.border_on_hover:hover {
+    border: 1px solid lightgray;
+}
+
+.note_table, .note_table td, .status_table, .status_table td, .stage_table, .stage_table td {
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-spacing: 0;
+}
+
+.editor-table {
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-spacing: 0;
+    
+}
+
+.editor-error {
+    color: red;
+    padding-left: 30px;
+}
+
+/* Выпадающее меню фильтра в гриде */
+.k-item > span.k-link {
+    white-space: nowrap;
+    padding-right: 1.5em !important;
+}

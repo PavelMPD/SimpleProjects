@@ -1,0 +1,24 @@
+﻿@using Kendo.Mvc.UI
+
+<style>
+    #MainMenu.k-menu .k-item, #MainMenu.k-widget.k-menu-horizontal>.k-item {
+        border-style: none !important;
+    }
+</style>
+
+@Html.Kendo().Menu().Name("MainMenu").Items(items =>
+    {
+        items.Add().Text("Главная").Action("Index", "Dashboard").Enabled(IsEnabled("Dashboard"));
+        items.Add().Text("Пользователи").Action("Index", "Users").Enabled(IsEnabled("Users"));
+        items.Add().Text("Задачи").Action("Index", "Tasks").Enabled(IsEnabled("Tasks"));
+        items.Add().Text("Администрирование").Action("Index", "Administration").Enabled(IsEnabled("Administration"));
+    })
+
+@functions
+{
+    private bool IsEnabled(string controllerName)
+    {
+        var currentController = Html.ViewContext.RouteData.GetRequiredString("controller");
+        return !string.Equals(currentController, controllerName, StringComparison.OrdinalIgnoreCase);
+    }
+}

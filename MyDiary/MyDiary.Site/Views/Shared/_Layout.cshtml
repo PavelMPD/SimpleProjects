@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!--Исходный вариант-->
+    @*@Styles.Render("~/Content/css")
+    
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    
+    @RenderSection("scripts", required: false)*@
+    <!--Исходный вариант-->
+    
+    <!--DC-->
+    @Styles.Render("~/Content/kendo")
+    @Styles.Render("~/Content/jqueryUI")
+    @Styles.Render("~/Content/dc-grid")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryUI")
+    @Scripts.Render("~/bundles/jquery.unobtrusive")
+    
+    @Scripts.Render("~/bundles/dc.jquery")
+    @Scripts.Render("~/bundles/kendo")
+    @Scripts.Render("~/bundles/dc")
+    @Scripts.Render("~/bundles/jstorage.js")
+    <!--DC-->
+</head>
+    <body>
+        <header>
+            <table>
+                <tr>
+                    <td>
+                        @Html.Partial("MainMenu")
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <div id="body">
+            @RenderBody()
+        </div>
+    </body>
+</html>

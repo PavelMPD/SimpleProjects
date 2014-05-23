@@ -1,0 +1,37 @@
+1) Проекты решения
+	Общие классы
+		Common
+			ObjectContainer - класс для работы с IoC
+	Модель
+		Model модель для работы с сущностями БД
+			Сущности
+		ViewModel модель для работы с представлениями
+	Работа с данными
+		DataAccess для работы с Entity Framework
+			ApplicationDbContext - класс в который добавляются наборы сущностей и настраиваются связи между сущностями
+			Repository - класс в котором реализованы основные методы для работы с сущностью
+	База данных
+		DbMigration проект по созданию миграций
+			Добавил в проект файл локальной базы данных "Service-based Database"
+			Создать первую миграцию по созданию таблиц и связей между ними
+	Site
+		App_Start\RouteConfig.cs
+			Шаблон URL
+			Стартовая страница по умолчанию
+		App_Start\BundleConfig.cs
+			Позволяет группировать скрипты по группам
+		Скрипты и темы взял из DC
+			
+
+2) Библиотеки
+	Entity Framework 6.1.0
+		DataAccess
+	FluentMigrator 1.1.2.1
+		DbMigration
+	FluentMigrator.Tool 1.1.2.1
+		DbMigration
+	Unity
+		Common
+	NUnit 2.6.3
+		FuncrionalTests
+		

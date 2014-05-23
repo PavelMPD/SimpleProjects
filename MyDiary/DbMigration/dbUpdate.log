@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+=============================== FluentMigrator ================================
+-------------------------------------------------------------------------------
+Source Code:
+  http://github.com/schambers/fluentmigrator
+Ask For Help:
+  http://groups.google.com/group/fluentmigrator-google-group
+-------------------------------------------------------------------------------
+[+] Using Database sqlserver and Connection String data source=(LocalDB)\v11.0;AttachDbFilename=d:\Pavel\SimpleProjects\GitHubRepository\SimpleProjects\MyDiary\DbMigration\MyDiary.mdf;Integrated Security=True
+-------------------------------------------------------------------------------
+201403201511: CreateTablesAndRelations migrating
+-------------------------------------------------------------------------------
+[+] Beginning Transaction
+[+] ExecuteSqlScript d:\Pavel\SimpleProjects\GitHubRepository\SimpleProjects\MyDiary\DbMigration\SqlScripts\201403201511\CreateTables.sql
+[+] Committing Transaction
+[+] 201403201511: CreateTablesAndRelations migrated
+[+] Task completed.
