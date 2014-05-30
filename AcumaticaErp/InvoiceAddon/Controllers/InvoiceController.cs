@@ -3,18 +3,10 @@ using PX.Data;
 
 namespace InvoiceAddon.Controllers
 {
-    public class InvoiceController : PXGraph<InvoiceController>
+    public class InvoiceController : PXGraph<InvoiceController, CFIMInvoice>
     {
-        public PXSelectReadonly<CFIMInvoice> Invoices;
-
-        //protected virtual void InvoiveSave(PXCache sender, PXFieldVerifyingEventArgs e)
-        //{
-            
-        //}
-
-        //protected virtual void InvoiveDelete(PXCache sender, PXFieldVerifyingEventArgs e)
-        //{
-
-        //}
+        public PXSelect<CFIMInvoice, Where<CFIMInvoice.code, Equal<Optional<CFIMInvoice.code>>>> Invoices;
+        public PXAction<CFIMInvoice> insert;
+        public PXAction<CFIMInvoice> save;
     }
 }
